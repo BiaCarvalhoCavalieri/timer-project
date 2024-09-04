@@ -6,7 +6,7 @@ import {
   useReducer,
   useState,
 } from 'react'
-import type { ICycle, NewCycleFormData } from '../@types/types'
+import type { ICycle, ICyclesContext, NewCycleFormData } from '../@types/types'
 import { cyclesReducer } from '../reducers/cycles/reducer'
 import {
   addNewCycleAction,
@@ -19,18 +19,7 @@ interface CyclesContextProviderProps {
   children: ReactNode
 }
 
-interface CyclesContextType {
-  cycles: ICycle[]
-  activeCycle: ICycle | undefined
-  activeCycleId: string | null
-  amountSecondsPassed: number
-  markCurrentCycleAsFinished: () => void
-  definingAmountSecondsPassed: (seconds: number) => void
-  createNewCycle: (data: NewCycleFormData) => void
-  interruptCurrentCycle: () => void
-}
-
-export const CyclesContext = createContext({} as CyclesContextType)
+export const CyclesContext = createContext({} as ICyclesContext)
 
 export function CyclesContextProvider({
   children,

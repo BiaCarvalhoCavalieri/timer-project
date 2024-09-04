@@ -11,3 +11,14 @@ export interface NewCycleFormData {
   task: string
   minutesAmount: number
 }
+
+export interface ICyclesContext {
+  cycles: ICycle[]
+  activeCycle: ICycle | undefined
+  activeCycleId: string | null
+  amountSecondsPassed: number
+  markCurrentCycleAsFinished: () => void
+  definingAmountSecondsPassed: (seconds: number) => void
+  createNewCycle: (data: NewCycleFormData) => void
+  interruptCurrentCycle: () => void
+}
