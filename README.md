@@ -18,7 +18,7 @@
 - Styled-components
 
 ## 🎨 Layout
-  <img alt="timer layout" src="https://imgur.com/a/rwA9i8k">
+  <img alt="timer layout" src="https://i.imgur.com/HRO3VJ0.png">
 
 ## 🔥 Usage Instructions
 
