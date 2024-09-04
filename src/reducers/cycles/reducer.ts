@@ -1,5 +1,5 @@
 import { produce } from 'immer'
-import { ICycle } from '../@types/types'
+import type { ICycle } from '../../@types/types'
 import { ActionTypes } from './actions'
 
 interface CyclesState {
