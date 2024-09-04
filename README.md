@@ -16,7 +16,6 @@
 - GraphQL
 - Vite
 - Styled-components
--
 
 ## 🎨 Layout
   <img alt="timer layout" src="https://imgur.com/a/rwA9i8k">
