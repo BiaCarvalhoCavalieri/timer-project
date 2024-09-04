@@ -10,6 +10,10 @@ export const FormContainer = styled.div`
   color: ${(props) => props.theme['gray-100']};
   font-size: 1.125rem;
   font-weight: bold;
+
+  @media screen and (max-width: 48rem) {
+    font-size: 1rem;
+  }
 `
 const BaseInput = styled.input`
   background-color: transparent;
@@ -27,6 +31,10 @@ const BaseInput = styled.input`
   }
   &::placeholder {
     color: ${(props) => props.theme['gray-500']};
+  }
+  @media screen and (max-width: 48rem) {
+    font-size: 1rem;
+    height: 2rem;
   }
 `
 export const TaskInput = styled(BaseInput)`

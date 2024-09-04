@@ -13,6 +13,13 @@ export const HomeContainer = styled.main`
     align-items: center;
     gap: 3.5rem;
   }
+
+  @media screen and (max-width: 48rem) {
+    max-width: 100%;
+    form {
+      width: 100%;
+    }
+  }
 `
 
 export const BaseCountdownButton = styled.button`
